@@ -1,5 +1,6 @@
 ﻿using System;
 using IBM.Data.DB2.Core;
+using System.IO;
 
 namespace ConsoleApp
 {
