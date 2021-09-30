@@ -8,6 +8,7 @@ namespace ConsoleApp
         static void Main(string[] args)
         {
            Console.WriteLine("Welcome to Db2 .NET from OC");
+            Console.WriteLine("Current directory is "+Directory.GetCurrentDirectory());
             try
             {
                 DB2Connection conn = new DB2Connection("DATABASE=SomeDb;server=yourserver:50000;UID=myuserid;PWD=testpwd;");
