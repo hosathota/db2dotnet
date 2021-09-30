@@ -1,4 +1,5 @@
 ﻿using System;
+using IBM.Data.DB2.Core;
 
 namespace ConsoleApp
 {
@@ -6,7 +7,18 @@ namespace ConsoleApp
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello New World!");
+           Console.WriteLine("Welcome to Db2 .NET from OC");
+            try
+            {
+                DB2Connection conn = new DB2Connection("");
+                conn.Open();
+                Console.WriteLine("Connection Open and connected to server version "+conn.ServerVersion);
+            }
+            catch(Exception ex)
+            {
+                Console.WriteLine("Db2 Connection Error "+ex.Message);
+            }
+            Console.WriteLine("Complete");
         }
     }
 }
