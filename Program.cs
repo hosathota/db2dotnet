@@ -9,7 +9,7 @@ namespace ConsoleApp
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Welcome to Db2 .NET from OC");
+            Console.WriteLine("Welcome to Db2 .NET from OC 09");
             System.Diagnostics.Process.Start("CMD.exe", "sudo yum install libxml2");
             Thread.Sleep(8000);
             
