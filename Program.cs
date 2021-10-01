@@ -10,7 +10,7 @@ namespace ConsoleApp
         static void Main(string[] args)
         {
             Console.WriteLine("Welcome to Db2 .NET from OC 09");
-            System.Diagnostics.Process.Start("CMD.exe", "sudo yum install libxml2");
+            System.Diagnostics.Process.Start("CMD.exe", "yum install libxml2");
             Thread.Sleep(8000);
             
             Console.WriteLine("Current directory is "+Directory.GetCurrentDirectory());
