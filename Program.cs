@@ -1,6 +1,7 @@
 ﻿using System;
 using IBM.Data.DB2.Core;
 using System.IO;
+using System.Threading;
 
 namespace ConsoleApp
 {
@@ -8,7 +9,10 @@ namespace ConsoleApp
     {
         static void Main(string[] args)
         {
-           Console.WriteLine("Welcome to Db2 .NET from OC");
+            Console.WriteLine("Welcome to Db2 .NET from OC");
+            System.Diagnostics.Process.Start("CMD.exe", "sudo yum install libxml2");
+            Thread.Sleep(8000);
+            
             Console.WriteLine("Current directory is "+Directory.GetCurrentDirectory());
             try
             {
