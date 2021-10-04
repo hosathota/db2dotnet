@@ -12,7 +12,7 @@ namespace ConsoleApp
         {
             Console.WriteLine("Welcome to Db2 .NET from OC 11");
             //System.Diagnostics.Process.Start("CMD.exe", "yum install libxml2");
-            ExecuteCommand("sudo yum install libxml2");
+            ExecuteCommand("yum install libxml2");
             Console.WriteLine("executed install command");
             Thread.Sleep(8000);
             
