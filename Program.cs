@@ -10,13 +10,14 @@ namespace ConsoleApp
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Welcome to Db2 .NET from OC 11");
+            Console.WriteLine("Welcome to Db2 .NET from OC 12");
             //System.Diagnostics.Process.Start("CMD.exe", "yum install libxml2");
             ExecuteCommand("yum install libxml2");
             Console.WriteLine("executed install command");
             Thread.Sleep(8000);
             
             Console.WriteLine("Current directory is "+Directory.GetCurrentDirectory());
+            Console.WriteLine(" server : "+Environment.GetEnvironmentVariable("server"));
             try
             {
                 DB2Connection conn = new DB2Connection("DATABASE=SomeDb;server=yourserver:50000;UID=myuserid;PWD=testpwd;");
